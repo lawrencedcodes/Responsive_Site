@@ -15,7 +15,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: $primary;
+    color: $dark-gray;
 }
 ul {
     list-style: none;
@@ -41,11 +41,11 @@ img {
 
     }
     a {
-        //color: white;
+        color: white;
         padding: .45rem;
         margin: 0 .25rem;
         &:hover {
-            color: $dark-gray;
+            color: $primary;
         }
     }
 }
