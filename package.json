@@ -1,0 +1,17 @@
+{
+  "name": "responsive_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Responsive",
+    "Website",
+    "SASS",
+    "CSS"
+  ],
+  "author": "Lawrence Lockhart",
+  "license": "ISC"
+}
