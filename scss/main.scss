@@ -1,5 +1,51 @@
-$myred: red;
-
+//   GENERAL   //
+@import 'config';
+@import 'utilities';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-    background: $myred;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: white;
+    color: $dark-gray;
+}
+a {
+    text-decoration: none;
+    color: $primary;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+
+//  NAVBAR //
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 2rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid $dark-gray;
+    opacity: .9;
+    ul {
+        display: flex;
+
+    }
+    a {
+        //color: white;
+        padding: .45rem;
+        margin: 0 .25rem;
+        &:hover {
+            color: $dark-gray;
+        }
+    }
 }
