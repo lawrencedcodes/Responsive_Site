@@ -1,3 +1,19 @@
+// TEXT STYLES
+.x-large {
+    font-size: 6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 //  BACKGROUNDS   
 .bg {
     &-primary {
@@ -20,4 +36,55 @@
         @include set-background($white);
         border: #ccc 2px solid;
     }   
+}
+
+// BUTTONS
+.btn {
+    display: inline-block;
+    background: $light;
+    color: $dark-gray;
+    padding: .4rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: .5rem;
+    outline: none;
+    transition: all .3s ease-in;
+    &.btn-primary {
+        @include set-background($primary);
+        &:hover {
+            background: lighten($primary,15%);
+        }
+    }
+    &.btn-dark {
+        @include set-background($dark);
+        &:hover {
+            background: lighten($dark,15%);
+        }
+    }
+    &.btn-sucess {
+        @include set-background($success);
+        &:hover {
+            background: lighten($success,15%);
+        }
+    }
+    &.btn-danger {
+        @include set-background($danger);
+        &:hover {
+            background: lighten($danger,15%);
+        }
+    }
+    &:hover {
+        background: lighten($dark,20%);
+        color: white;
+    }
+}
+
+.dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
 }

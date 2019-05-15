@@ -49,3 +49,24 @@ img {
         }
     }
 }
+
+//  LANDING CLASSES
+.landing {
+    position: relative;
+    background: url("../img/coding1.jpg") no-repeat center center;
+    height: 100vh;
+    &-inner {
+        color: white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    a {
+        color: $primary;
+    }
+}
